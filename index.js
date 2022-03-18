@@ -81,13 +81,17 @@ async function run() {
             res.json(results);
         });
 
-
-
     } finally {
       //await client.close();
     }
   }
   run().catch(console.dir);
+
+   // check 
+   app.get('/', async(req, res)=>{
+          
+        res.send('Running Server')
+  });
 
 
 app.listen(port, ()=>{
