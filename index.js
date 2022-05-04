@@ -90,7 +90,7 @@ async function run() {
    // check 
    app.get('/', async(req, res)=>{
           
-        res.send('Server Is Running ')
+        res.send('Server Is on ')
   });
 
 
